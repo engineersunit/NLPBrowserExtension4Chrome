@@ -1,0 +1,24 @@
+{
+    "name": "Natural Language Processing (NLP) Statistics from Wikipedia pages",
+    "version": "1.0",
+    "description": "Computes Natural Language Processing (NLP) Statistics from the wikipedia pages",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "16": "natural-language-processing.png",
+            "32": "natural-language-processing.png",
+            "48": "natural-language-processing.png",
+            "128": "natural-language-processing.png"
+        
+        }
+    },
+    "content_scripts": [
+        {
+          "js": ["scripts/content.js"],
+          "matches": [
+            "https://en.wikipedia.org/wiki/*"
+          ]
+        }
+      ]
+}
